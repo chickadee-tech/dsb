@@ -1,0 +1,182 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ckd_sandwich
+LIBS:ti-gate
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 7050 7000 0    197  ~ 0
+dual-serial-breakout
+$Sheet
+S 9300 2050 1200 3400
+U 564009DE
+F0 "ExpansionPort" 60
+F1 "ExpansionPort.sch" 60
+F2 "+5V" I L 9300 3800 60 
+F3 "GND" I R 10500 3800 60 
+F4 "UART2_TX" I L 9300 5100 60 
+F5 "UART2_RX" I L 9300 5200 60 
+F6 "UART1_TX" I L 9300 5300 60 
+F7 "UART1_RX" I L 9300 5400 60 
+$EndSheet
+$Comp
+L GNDPWR #PWR01
+U 1 1 56428051
+P 3350 3350
+F 0 "#PWR01" H 3350 3150 50  0001 C CNN
+F 1 "GNDPWR" H 3350 3220 50  0000 C CNN
+F 2 "" H 3350 3300 60  0000 C CNN
+F 3 "" H 3350 3300 60  0000 C CNN
+	1    3350 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR02
+U 1 1 564280A1
+P 3550 2950
+F 0 "#PWR02" H 3550 2750 50  0001 C CNN
+F 1 "GNDPWR" H 3550 2820 50  0000 C CNN
+F 2 "" H 3550 2900 60  0000 C CNN
+F 3 "" H 3550 2900 60  0000 C CNN
+	1    3550 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 3350 3350 3350
+Wire Wire Line
+	3000 3250 3350 3250
+Wire Wire Line
+	3350 3250 3350 3150
+Wire Wire Line
+	3000 2850 3350 2850
+Wire Wire Line
+	3350 2850 3350 2750
+$Comp
+L +5V #PWR03
+U 1 1 5642822B
+P 3350 3150
+F 0 "#PWR03" H 3350 3000 50  0001 C CNN
+F 1 "+5V" H 3350 3290 50  0000 C CNN
+F 2 "" H 3350 3150 60  0000 C CNN
+F 3 "" H 3350 3150 60  0000 C CNN
+	1    3350 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR04
+U 1 1 5642827B
+P 3350 2750
+F 0 "#PWR04" H 3350 2600 50  0001 C CNN
+F 1 "+5V" H 3350 2890 50  0000 C CNN
+F 2 "" H 3350 2750 60  0000 C CNN
+F 3 "" H 3350 2750 60  0000 C CNN
+	1    3350 2750
+	1    0    0    -1  
+$EndComp
+Text Label 3000 3150 0    60   ~ 0
+RX1
+Text Label 3000 3050 0    60   ~ 0
+TX1
+Text Label 3000 2750 0    60   ~ 0
+RX2
+Text Label 3000 2650 0    60   ~ 0
+TX2
+Wire Wire Line
+	10500 3800 10800 3800
+Wire Wire Line
+	10800 3800 10800 4000
+$Comp
+L GNDPWR #PWR05
+U 1 1 564284DE
+P 10800 4000
+F 0 "#PWR05" H 10800 3800 50  0001 C CNN
+F 1 "GNDPWR" H 10800 3870 50  0000 C CNN
+F 2 "" H 10800 3950 60  0000 C CNN
+F 3 "" H 10800 3950 60  0000 C CNN
+	1    10800 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 3800 8900 3800
+Wire Wire Line
+	8900 3800 8900 3400
+$Comp
+L +5V #PWR06
+U 1 1 56428553
+P 8900 3400
+F 0 "#PWR06" H 8900 3250 50  0001 C CNN
+F 1 "+5V" H 8900 3540 50  0000 C CNN
+F 2 "" H 8900 3400 60  0000 C CNN
+F 3 "" H 8900 3400 60  0000 C CNN
+	1    8900 3400
+	1    0    0    -1  
+$EndComp
+Text Label 9100 5100 2    60   ~ 0
+TX2
+Text Label 9100 5200 2    60   ~ 0
+RX2
+Text Label 9100 5300 2    60   ~ 0
+TX1
+Text Label 9100 5400 2    60   ~ 0
+RX1
+Wire Wire Line
+	9100 5100 9300 5100
+Wire Wire Line
+	9300 5200 9100 5200
+Wire Wire Line
+	9100 5300 9300 5300
+Wire Wire Line
+	9300 5400 9100 5400
+$Comp
+L CONN_01X08 P1
+U 1 1 56428DD6
+P 2800 3000
+F 0 "P1" H 2800 3450 50  0000 C CNN
+F 1 "CONN_01X08" V 2900 3000 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x08" H 2800 3000 60  0001 C CNN
+F 3 "" H 2800 3000 60  0000 C CNN
+	1    2800 3000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3000 2950 3550 2950
+$EndSCHEMATC
