@@ -5,4 +5,6 @@
   (lib (name flightstack)(type KiCad)(uri /Users/tannewt/chickadee-projects/shared/kicad/libraries/public/footprints/flightstack.pretty)(options "")(descr ""))
   (lib (name macrofab)(type KiCad)(uri /Users/tannewt/chickadee-projects/shared/kicad/libraries/public/footprints/macrofab.pretty)(options "")(descr ""))
   (lib (name oshw)(type KiCad)(uri /Users/tannewt/chickadee-projects/shared/kicad/libraries/public/footprints/oshw.pretty)(options "")(descr ""))
+  (lib (name polyboard)(type KiCad)(uri /Users/tannewt/chickadee-projects/shared/kicad/libraries/public/footprints/polyboard.pretty)(options "")(descr ""))
+  (lib (name polystack)(type KiCad)(uri /Users/tannewt/chickadee-projects/shared/kicad/libraries/public/footprints/polystack.pretty)(options "")(descr ""))
 )
