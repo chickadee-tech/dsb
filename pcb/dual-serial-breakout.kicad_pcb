@@ -1,9 +1,9 @@
 (kicad_pcb (version 4) (host pcbnew 4.0.1-stable)
 
   (general
-    (links 0)
-    (no_connects 1)
-    (area 129.924999 89.924999 166.075001 126.075001)
+    (links 153)
+    (no_connects 0)
+    (area 118.127143 74.1 269.404765 178)
     (thickness 1.6)
     (drawings 62)
     (tracks 1061)
@@ -2435,7 +2435,7 @@
   )
 
   (module chickadee:chickadee_3mm_fcu (layer F.Cu) (tedit 0) (tstamp 56428A5D)
-    (at 143.55 93.12)
+    (at 148.3 93.1)
     (fp_text reference G*** (at 0 0) (layer F.SilkS) hide
       (effects (font (thickness 0.3)))
     )
@@ -3353,7 +3353,7 @@
   )
 
   (module oshw:oshw-4mm (layer F.Cu) (tedit 0) (tstamp 56F35786)
-    (at 150.45 92.95)
+    (at 141.95 92.95)
     (fp_text reference G*** (at 0 0) (layer F.SilkS) hide
       (effects (font (thickness 0.3)))
     )
@@ -5481,6 +5481,9 @@
   (segment (start 158.110316 107.024) (end 157.760316 107.024) (width 0.1524) (layer F.Cu) (net 55))
   (segment (start 157.760316 107.024) (end 156.894127 106.287883) (width 0.1524) (layer F.Cu) (net 55))
   (segment (start 156.894127 106.287883) (end 156.721418 106.491109) (width 0.1524) (layer F.Cu) (net 55))
+  (segment (start 158.11 109) (end 156.525005 109) (width 0.1524) (layer F.Cu) (net 56))
+  (segment (start 156.525005 109) (end 156.306694 108.781689) (width 0.1524) (layer F.Cu) (net 56))
+  (segment (start 158.11 109) (end 157.783915 109) (width 0.1524) (layer F.Cu) (net 56))
   (segment (start 134.5 103.8) (end 134.43 103.73) (width 0.508) (layer F.Cu) (net 56))
   (segment (start 134.43 103.73) (end 131.55 103.73) (width 0.508) (layer F.Cu) (net 56))
   (segment (start 141.4 113.65) (end 141.4 115.1) (width 0.1524) (layer B.Cu) (net 56))
@@ -5567,9 +5570,6 @@
   (segment (start 157.760316 108.576401) (end 157.180872 109.068832) (width 0.1524) (layer F.Cu) (net 56))
   (segment (start 157.180872 109.068832) (end 156.892034 108.964297) (width 0.1524) (layer F.Cu) (net 56))
   (segment (start 156.892034 108.964297) (end 156.306694 108.781689) (width 0.1524) (layer F.Cu) (net 56))
-  (segment (start 158.110316 108.976401) (end 157.760316 108.976401) (width 0.1524) (layer F.Cu) (net 56))
-  (segment (start 157.760316 108.976401) (end 156.894127 109.712518) (width 0.1524) (layer F.Cu) (net 56))
-  (segment (start 156.894127 109.712518) (end 156.721418 109.509292) (width 0.1524) (layer F.Cu) (net 56))
   (segment (start 156.889988 110.406564) (end 156.405055 110.406564) (width 0.1524) (layer B.Cu) (net 57))
   (segment (start 158.110316 111.376401) (end 157.374892 111.376401) (width 0.1524) (layer F.Cu) (net 57))
   (segment (start 157.374892 111.376401) (end 156.747954 110.749463) (width 0.1524) (layer F.Cu) (net 57))
