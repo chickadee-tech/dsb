@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:dual-serial-breakout-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,9 +28,8 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:ckd_sandwich
+LIBS:polystack
 LIBS:ti-gate
-LIBS:dual-serial-breakout-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -47,26 +45,26 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CKD_SANDWICH-RESCUE-dual-serial-breakout PORT_IN1
+L POLYSTACK_CONNECTOR PORT_IN1
 U 1 1 56401367
 P 2850 1650
 AR Path="/56401367" Ref="PORT_IN1"  Part="1" 
 AR Path="/564009DE/56401367" Ref="PORT_IN1"  Part="1" 
 F 0 "PORT_IN1" H 2850 -2500 60  0000 C CNN
-F 1 "CKD_SANDWICH" H 2850 -2400 60  0000 C CNN
+F 1 "POLYSTACK_CONNECTOR" H 2850 -2400 60  0000 C CNN
 F 2 "hirose-df40:DF40-80pin-Header" H 2850 -2550 60  0001 C CNN
 F 3 "" H 2850 -2550 60  0000 C CNN
 	1    2850 1650
 	1    0    0    -1  
 $EndComp
 $Comp
-L CKD_SANDWICH-RESCUE-dual-serial-breakout PORT_OUT1
+L POLYSTACK_CONNECTOR PORT_OUT1
 U 1 1 5640139F
 P 6150 1650
 AR Path="/5640139F" Ref="PORT_OUT1"  Part="1" 
 AR Path="/564009DE/5640139F" Ref="PORT_OUT1"  Part="1" 
 F 0 "PORT_OUT1" H 6150 -2500 60  0000 C CNN
-F 1 "CKD_SANDWICH" H 6150 -2400 60  0000 C CNN
+F 1 "POLYSTACK_CONNECTOR" H 6150 -2400 60  0000 C CNN
 F 2 "hirose-df40:DF40-3-4mm-80pin-Receptacle" H 6150 -2550 60  0001 C CNN
 F 3 "" H 6150 -2550 60  0000 C CNN
 	1    6150 1650
@@ -403,14 +401,6 @@ Text Label 2150 2400 2    60   ~ 0
 GPIO4
 Text Label 5450 2400 2    60   ~ 0
 GPIO4
-Text Label 2150 2500 2    60   ~ 0
-xi2c1_SDA
-Text Label 5450 2500 2    60   ~ 0
-xi2c1_SDA
-Text Label 2150 2600 2    60   ~ 0
-xi2c1_SCL
-Text Label 5450 2600 2    60   ~ 0
-xi2c1_SCL
 Text Label 2150 2700 2    60   ~ 0
 si2c_SDA
 Text Label 5450 2700 2    60   ~ 0
@@ -627,4 +617,12 @@ Wire Wire Line
 	4300 6150 4500 6150
 Text Notes 7050 7050 0    60   ~ 0
 Copyright 2016 Chickadee Tech LLC, <add attributions here>\n\nThis work is licensed under the Creative Commons Attribution 4.0 International License.\nTo view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/\nor send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+Text Label 2150 2500 2    60   ~ 0
+GPIO5
+Text Label 2150 2600 2    60   ~ 0
+GPIO6
+Text Label 5450 2500 2    60   ~ 0
+GPIO5
+Text Label 5450 2600 2    60   ~ 0
+GPIO6
 $EndSCHEMATC

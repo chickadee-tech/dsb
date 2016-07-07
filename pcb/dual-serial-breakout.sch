@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:dual-serial-breakout-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,9 +28,8 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:ckd_sandwich
+LIBS:polystack
 LIBS:ti-gate
-LIBS:dual-serial-breakout-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
